@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cliente por ID</title>
+    <link rel="stylesheet" href="/css/buscar.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="http://127.0.0.1:5500/Index.html">Cadastro</a>
+            <a href="http://127.0.0.1:5500/html/lista.html">Lista</a>
+            <a href="http://127.0.0.1:5500/html/Atualizar.html">Atualizar</a>
+            <a href="http://127.0.0.1:5500/html/Buscar.html">Buscar</a>
+        </div>
+    </header>
+
+    <div id="search-client">
+        <h2>Buscar Cliente por ID</h2>
+        <form id="searchForm">
+            <label for="searchId">Informe o ID do cliente:</label>
+            <input type="text" id="searchId" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="searchResult"></div>
+        <p id="message"></p>
+    </div>
+
+    <script src="/Script/Buscar.js"></script>
+</body>
+</html>

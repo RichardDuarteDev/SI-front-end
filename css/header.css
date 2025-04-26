@@ -1,0 +1,22 @@
+
+    header {
+        background-color: #111111; 
+        padding: 10px; 
+    }
+
+    .menu {
+        display: flex; 
+        justify-content: flex-start; 
+    }
+
+    .menu a {
+        color: rgb(244, 231, 231); 
+        text-decoration: none; 
+        margin-right: 15px; 
+        font-weight: bold; 
+    }
+
+    .menu a:hover {
+        text-decoration: underline; 
+    }
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cliente</title>
+    <link rel="stylesheet" href="/css/atualizar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="menu">
+            <a href="http://127.0.0.1:5500/Index.html">Cadastro</a>
+            <a href="http://127.0.0.1:5500/html/lista.html">Lista</a>
+            <a href="http://127.0.0.1:5500/html/Atualizar.html">Atualizar</a>
+            <a href="http://127.0.0.1:5500/html/Buscar.html">Buscar</a>
+        </div>
+    </header>
+    <main>
+        <h1>Atualizar informe o ID do Cliente</h1>
+        <form id="searchForm">
+            <label for="searchId">ID do Cliente:</label>
+            <input type="number" id="searchId" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="message"></div>
+        <form id="updateForm" style="display: none;">
+            <label for="clientId">ID:</label>
+            <input type="number" id="clientId" readonly><br>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required><br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required><br>
+            <label for="dob">Data de Nascimento:</label>
+            <input type="date" id="dob" required><br>
+            <label for="gender">Sexo:</label>
+            <select id="gender" required>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select><br>
+            <label for="status">Situação:</label>
+            <select id="status" required>
+                <option value="1">Ativo</option>
+                <option value="2">Inativo</option>
+                <option value="3">Bloqueado</option>
+            </select><br>
+            <button type="submit">Atualizar</button>
+        </form>
+    </main>
+    <script src="/Script/Atualizar.js"></script>
+</body>
+</html>
